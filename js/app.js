@@ -258,7 +258,10 @@ export default class Sketch {
     this.renderer.render(this.scene, this.camera);
   }
 }
-
+new Sketch({
+  dom: document.getElementById("content")
+})
 new Sketch({
   dom: document.getElementById("canvasContainer")
 });
+
